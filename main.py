@@ -10,8 +10,12 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
 from PIL import Image
 import random
-import kagglehub
 from sklearn.model_selection import train_test_split
+import kagglehub
+
+path = kagglehub.dataset_download("sshikamaru/udacity-self-driving-car-dataset")
+
+print("Path to dataset files:", path)
 
 dataset_path = '/kaggle/input/udacity-self-driving-car-dataset/data/export'
 annotations_path = '/kaggle/input/udacity-self-driving-car-dataset/data/export/_annotations.csv'
